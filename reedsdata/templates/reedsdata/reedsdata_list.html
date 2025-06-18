@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body class="bg-gradient-to-r from-indigo-800 to-blue-900 flex items-center justify-center min-h-screen p-8">
+  <div class="w-full max-w-6xl bg-white px-6 pt-10 pb-8 shadow-2xl ring-1 ring-gray-900/5 rounded-xl sm:px-10 animate-fade-in relative after:h-[1px] after:w-[200px] after:bg-gradient-to-r after:from-transparent after:via-purple-500 after:to-transparent after:absolute after:-top-[2px] after:left-[65%] after:opacity-0 after:content-[''] hover:after:left-[30%] hover:after:opacity-100 after:transition-all">
+    
+    <h2 class="text-2xl font-bold text-center text-indigo-800 mb-8">My Reeds Data</h2>
+
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white border rounded-lg shadow">
+        <thead class="bg-indigo-100">
+          <tr>
+            <th class="py-2 px-4 text-left">Reed ID</th>
+            <th class="py-2 px-4 text-left">Evaluation</th>
+            <th class="py-2 px-4 text-left">Created Date</th>
+            <th class="py-2 px-4 text-left">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for reed in reeds %}
+          <tr class="border-t">
+            <td class="py-2 px-4">{{ reed.reed_ID }}</td>
+            <td class="py-2 px-4">{{ reed.evaluation }}</td>
+            <td class="py-2 px-4">{{ reed.date|date:"d M Y" }}</td>
+            <td class="py-2 px-4 space-x-2">
+              <a href="{% url 'reeds:edit_reedsdata' reed.pk %}" class="text-blue-600 hover:underline">Edit</a>
+              <a href="{% url 'reeds:delete_reedsdata' reed.pk %}" class="text-red-600 hover:underline">Delete</a>
+            </td>
+          </tr>
+          {% empty %}
+          <tr>
+            <td colspan="4" class="py-4 text-center text-gray-600">No reeds found.</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+</body>
+{% endblock %}
