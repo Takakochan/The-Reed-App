@@ -1,5 +1,5 @@
-**The Reed App** is a full-stack web application built with **Django**,
 # The-Reed-App
+**The Reed App** is a full-stack web application built with **Django**,
 A web app for analyzing oboe and bassoon reed cane characteristics and optimizing reed-making through data-driven insights.
 
 *This app is still under construction. I put in the repository time to time when part of app is done. 
