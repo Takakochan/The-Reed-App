@@ -13,7 +13,7 @@ A web app for analyzing oboe and bassoon reed cane characteristics and optimizin
 - Visual analysis of trends between cane characteristics and finished reed performance
 - Scoring system (1–10) for evaluating finished reeds, Perceived stiffness, Playing ease, Global quality score, Intonation, Tone color / Brightness, Response time. etc
 - Statistical insights to support better reed-making decisions
-- Clean and intuitive user interface
+- Clean and intuitive user interface, most of the detailed information pops up by hovering
 
 🔧 **Built with:**
 - Django
