@@ -17,6 +17,7 @@ A web app for analysing oboe and bassoon reed cane characteristics and optimisin
 
 **Parameters:**
 **Environmental & Material:** Temperature, Humidity, Location, Elevation, Air pressure, Cane Brand, Harvest Year, Gouging Machine, Diameter, Thickness, Hardness, Flexibility, Density, Shaper, Staple(oboe), Profile model, time of rehearsal or concert. 
+
 **Evaluations:** Playing Ease, Intonation, Tone Colour, Global Quality.
 **Memo**
 
